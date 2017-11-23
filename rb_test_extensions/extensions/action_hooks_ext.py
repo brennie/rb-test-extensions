@@ -15,6 +15,10 @@ class TestExtensionAction(BaseReviewRequestAction):
 
 
 class ActionHooksExtension(Extension):
+    metadata = {
+        'Name': 'Action Hooks Test Extension',
+    }
+
     def initialize(self):
         DiffViewerActionHook(self, actions=[
             {
