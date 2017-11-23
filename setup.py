@@ -4,15 +4,16 @@ from reviewboard.extensions.packaging import setup
 
 
 setup(
-    name='action_hooks_ext',
+    name='rb_test_extensions',
     version='0.1',
-    description='An ActionHook test extension',
+    description='Test extensions for Review Board',
     author='Barret Rennie',
     author_email='barret@brennie.ca',
     packages=find_packages(),
     license='MIT',
     entry_points={
-        'reviewboard.extensions':
-            'action_hooks_ext = action_hooks_ext.extension:ActionHooksExtension',
+        'reviewboard.extensions': [
+            'action_hooks_ext = rb_test_extensions.extensions:ActionHooksExtension',
+        ]
     },
 )

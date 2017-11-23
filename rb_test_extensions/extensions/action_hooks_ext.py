@@ -14,7 +14,6 @@ class TestExtensionAction(BaseReviewRequestAction):
     label = 'Test Extension Action'
 
 
-
 class ActionHooksExtension(Extension):
     def initialize(self):
         DiffViewerActionHook(self, actions=[
