@@ -1,5 +1,7 @@
 build/
 dist/
 
+*.egg
 *.egg-info
 *.py[co]
+*.whl
