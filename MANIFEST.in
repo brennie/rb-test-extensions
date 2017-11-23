@@ -1,0 +1,3 @@
+recursive-include rb_test_extensions/extensions/avatar_service_hooks_ext/static/ *
+include LICENSE
+include REAMDE.md

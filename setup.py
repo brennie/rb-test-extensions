@@ -11,9 +11,12 @@ setup(
     author_email='barret@brennie.ca',
     packages=find_packages(),
     license='MIT',
+    include_package_data=True,
+    zip_safe=False,
     entry_points={
         'reviewboard.extensions': [
             'action_hooks_ext = rb_test_extensions.extensions:ActionHooksExtension',
+            'avatar_service_hooks_ext = rb_test_extensions.extensions:AvatarServiceHooksExtension'
         ]
     },
 )
